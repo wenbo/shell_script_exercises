@@ -1,0 +1,6 @@
+count=$#
+while [ $count -ne 0 ]
+do
+wc "${!count}"       
+let count=count-1
+done
